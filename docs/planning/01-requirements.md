@@ -1,4 +1,3 @@
-
 # Requirement analysis
 
 This document lists the functional and non-functional requirements extracted from the project scenario (ProjectTask.pdf, section 2). Every requirement has a stable identifier. User stories, issues, tests and pull requests refer back to these identifiers, so the identifiers never change once published. A requirement that is dropped is marked as withdrawn instead of being renumbered.
@@ -116,10 +115,10 @@ Every non-functional requirement has a measurable threshold or a named mechanism
 
 | ID | Category | Requirement | Verified by |
 |---|---|---|---|
-| NFR-05 | Deployability | A merge to `main` produces a container image published to GitHub Container Registry, tagged with the version and the commit SHA, without manual steps. | GitHub Actions run history; image list in GHCR |
-| NFR-06 | Testability | Unit, integration and end-to-end tests run automatically on every pull request. A pull request with a failing check cannot be merged. | Branch protection rule on `main`; Actions checks on pull requests |
+| NFR-05 | Deployability | A merge to `master` produces a container image published to GitHub Container Registry, tagged with the version and the commit SHA, without manual steps. | GitHub Actions run history; image list in GHCR |
+| NFR-06 | Testability | Unit, integration and end-to-end tests run automatically on every pull request. A pull request with a failing check cannot be merged. | Branch protection rule on `master`; Actions checks on pull requests |
 | NFR-07 | Observability | The application exposes request count, request latency and error rate as metrics, and they are visible on a dashboard. | Metrics endpoint and dashboard screenshot in the monitoring documentation |
-| NFR-08 | Maintainability | The branching strategy and the versioning scheme are documented, and every change reaches `main` through a reviewed pull request linked to an issue. | Documentation in `docs/decisions/`; pull request history |
+| NFR-08 | Maintainability | The branching strategy and the versioning scheme are documented, and every change reaches `master` through a reviewed pull request linked to an issue. | Documentation in `docs/decisions/`; pull request history |
 | NFR-09 | Portability | The full stack (application and database) starts locally with a single `docker compose up`. | Fresh clone and start, documented in the README |
 | NFR-10 | Data integrity | Patients, doctors, appointments and medical records are never physically deleted through the application. Deactivation and cancellation preserve all historical data. | Integration tests on deactivate and cancel operations |
 | NFR-11 | Configuration and secrets | No credentials or secrets are committed to the repository. Configuration is supplied through environment variables and GitHub Actions secrets. | Secret scanning enabled on the repository; review of the compose and workflow files |

@@ -32,7 +32,11 @@ Full analysis: [docs/planning/01-requirements.md](docs/planning/01-requirements.
 
 ## 3. Roles and access control
 
-_Lab 01, Task 2._ Full matrix: [docs/planning/02-roles-and-access.md](docs/planning/02-roles-and-access.md)
+Three roles use the system. Receptionists own patient records and the appointment calendar. Doctors see their own appointments and patients, record diagnoses and notes, and export their data to CSV. Administrators manage doctors and user accounts and can cover front-desk work, but have no access to medical records. Patients are not users.
+
+Access is defined per capability in an RBAC matrix of 14 capabilities. Cells the scenario leaves open are decided and justified in the document. Every refusal in the matrix is enforced on the server and covered by an automated test.
+
+Roles and RBAC matrix: [docs/planning/02-roles-and-access.md](docs/planning/02-roles-and-access.md)
 
 ## 4. Product backlog
 
