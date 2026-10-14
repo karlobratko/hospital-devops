@@ -68,6 +68,18 @@ Stories and enablers are estimated in relative story points on a Fibonacci scale
 
 Scale, estimates and sprint backlogs: [docs/planning/07-estimation-and-sprints.md](docs/planning/07-estimation-and-sprints.md)
 
+## 8. Activity diagram
+
+The main flow is scheduling an appointment and recording the consultation. It is modelled as a UML activity diagram with three swimlanes: receptionist, system and doctor. The diagram shows the role permission check, the check that patient and doctor are active, and the double-booking rule. It also shows the database-level guard that catches a concurrent booking for the same slot. Every refusal leads back to the receptionist with a reason, apart from a permission refusal, which ends the flow.
+
+Diagram source: [docs/diagrams/activity-appointment.drawio](docs/diagrams/activity-appointment.drawio)
+
+## 9. Tools and tech stack
+
+The application uses Kotlin 2.4 on JDK 25, with Ktor 3.5 and server-rendered kotlinx.html pages enhanced with HTMX. Data lives in PostgreSQL 18, accessed without blocking through Exposed over R2DBC, with Flyway migrations. Tests use kotlin.test and Kotest, with Testcontainers for integration tests and Playwright for end-to-end tests. The application is packaged as a Docker image and published to GitHub Container Registry. GitHub Actions on a self-hosted runner builds, tests and publishes it, and Prometheus and Grafana monitor it.
+
+Full stack with justification: [docs/planning/08-tech-stack.md](docs/planning/08-tech-stack.md)
+
 ## Repository layout
 
 ```text
