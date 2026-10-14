@@ -62,6 +62,12 @@ The stories and enablers planned for the first sprints are broken into tasks. Ea
 
 Epics, stories, tasks and dependencies: [docs/planning/06-task-decomposition.md](docs/planning/06-task-decomposition.md)
 
+## 7. Estimation and sprint backlogs
+
+Stories and enablers are estimated in relative story points on a Fibonacci scale, and each value has a stated meaning. US-03, Register a patient, is the anchor at 3 points. The backlog totals 85 points. Four sprints at an opening capacity of about 15 points cover every Must story and every enabler, 63 points in all. The remaining 22 points of Should and Could stories are named as scope at risk, to be decided once velocity has been measured.
+
+Scale, estimates and sprint backlogs: [docs/planning/07-estimation-and-sprints.md](docs/planning/07-estimation-and-sprints.md)
+
 ## Repository layout
 
 ```text

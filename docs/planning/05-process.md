@@ -21,7 +21,7 @@ Each sprint has a one-sentence goal. The goals follow the order in which the cou
 | 1 | Walking skeleton: a user logs in, and every change is built and tested automatically. | Login with roles; doctor registration | Repository conventions, branching strategy, CI building and testing on every pull request |
 | 2 | Patients and doctors are managed end to end, and every merge publishes a container image. | Patient registration, search, editing and deactivation | Containerisation, image published to GitHub Container Registry |
 | 3 | Receptionists schedule appointments without double booking, and doctors record their consultations. | Appointments, medical records | Continuous delivery to the prototype environment |
-| 4 | The application is complete, tested end to end and observable. | CSV export, user administration, remaining Should stories | End-to-end tests in the pipeline, monitoring dashboard, documentation for the defence |
+| 4 | The calendar is fully manageable, end-to-end tests run in the pipeline, and the application is observable. | Appointment list, updates and cancellation; medical history; CSV export and user administration if velocity allows | End-to-end tests in the pipeline, monitoring dashboard, documentation for the defence |
 
 ## Artifacts
 
