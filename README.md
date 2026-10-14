@@ -50,7 +50,9 @@ Definition of Ready and Done: [docs/planning/04-definition-of-done.md](docs/plan
 
 ## 5. Process and ceremonies
 
-_Lab 01, Task 4._ Sprints, ceremonies and refinement triggers: [docs/planning/05-process.md](docs/planning/05-process.md)
+The project uses Scrum with four two-week sprints, each with a one-sentence goal. Each sprint delivers application features and a new pipeline stage: CI in sprint 1, a published container image in sprint 2, continuous delivery in sprint 3, and end-to-end tests and monitoring in sprint 4. Planning, review and retrospective are held each sprint and recorded in `docs/sprints/`. Because there is one developer, a dated work log replaces the daily scrum. Backlog refinement is continuous and is triggered by six named events.
+
+Sprints, ceremonies and refinement triggers: [docs/planning/05-process.md](docs/planning/05-process.md)
 
 ## Repository layout
 
@@ -59,6 +61,7 @@ README.md                  this page
 CONTRIBUTING.md            branch naming and pull request rules (Lab 03)
 .github/ISSUE_TEMPLATE/    user story and task templates (Lab 03)
 docs/planning/             requirements, roles, backlog, process, decomposition, estimation, stack
+docs/sprints/              one record per sprint: goal, work log, review, retrospective
 docs/diagrams/             UML diagrams as .drawio source files
 docs/decisions/            written analyses: branching, CI, test tooling, monitoring
 ```
