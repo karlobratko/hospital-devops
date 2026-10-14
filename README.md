@@ -1,2 +1,56 @@
-# hospital-devops
-Hospital management web app used to demonstrate a complete GitHub-based DevOps pipeline (Applied DevOps, Algebra Bernays).
+# Hospital Management — DevOps Project
+
+A small hospital administration web application, built as the vehicle for a complete GitHub-based DevOps pipeline. The application manages patients, doctors, appointments and basic medical records, with authentication and role-based access control.
+
+The application is deliberately simple. The deliverable is the process around it: every change travels from a requirement to a GitHub issue, a branch, a pull request, an automated build and test, and a published container image in GitHub Container Registry.
+
+Course: Applied DevOps, Graduate Study in Software Engineering, Algebra Bernays University.
+
+## Project board
+
+The work is tracked on the GitHub Project: _link added in Lab 03_.
+
+## 1. Project overview
+
+Hospital staff use the application to maintain patient information, a register of doctors and their specializations, and an appointment calendar. Doctors record a diagnosis and notes after each consultation and can export their authorized data as a CSV report.
+
+Three staff roles use the system: receptionists, doctors and administrators. Patients are data in the system, not users of it.
+
+The DevOps workflow this repository demonstrates is:
+
+```text
+requirement → GitHub issue → project task → branch → pull request → build → test → publish
+```
+
+## 2. Requirement analysis
+
+The scenario defines 27 functional requirements in six groups (patients, doctors, appointments, medical records, authentication, and access and export) and four non-functional requirements. Seven more non-functional requirements follow from the DevOps process itself. Every requirement has an identifier (FR-xx, NFR-xx) that issues and tests refer to.
+
+The one business rule in the scenario is that a doctor cannot have two appointments at the same date and time. Deactivating a patient or a doctor never deletes their history.
+
+Full analysis: [docs/planning/01-requirements.md](docs/planning/01-requirements.md)
+
+## 3. Roles and access control
+
+_Lab 01, Task 2._ Full matrix: [docs/planning/02-roles-and-access.md](docs/planning/02-roles-and-access.md)
+
+## 4. Product backlog
+
+_Lab 01, Task 3._ Ordered backlog: [docs/planning/03-product-backlog.md](docs/planning/03-product-backlog.md)
+
+Definition of Done: [docs/planning/04-definition-of-done.md](docs/planning/04-definition-of-done.md)
+
+## 5. Process and ceremonies
+
+_Lab 01, Task 4._ Sprints, ceremonies and refinement triggers: [docs/planning/05-process.md](docs/planning/05-process.md)
+
+## Repository layout
+
+```text
+README.md                  this page
+CONTRIBUTING.md            branch naming and pull request rules (Lab 03)
+.github/ISSUE_TEMPLATE/    user story and task templates (Lab 03)
+docs/planning/             requirements, roles, backlog, process, decomposition, estimation, stack
+docs/diagrams/             UML diagrams as .drawio source files
+docs/decisions/            written analyses: branching, CI, test tooling, monitoring
+```
