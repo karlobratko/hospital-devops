@@ -54,6 +54,14 @@ The project uses Scrum with four two-week sprints, each with a one-sentence goal
 
 Sprints, ceremonies and refinement triggers: [docs/planning/05-process.md](docs/planning/05-process.md)
 
+## 6. Task decomposition
+
+The backlog is organised into six epics. Five cover the application: authentication, patients, doctors, appointments, and medical records with export. The sixth, E6 Platform and pipeline, holds six enablers, one per pipeline stage. These run from the application skeleton and CI through to monitoring.
+
+The stories and enablers planned for the first sprints are broken into tasks. Each task is one branch and one pull request. Every story has at least one automated test task, and is marked `[TEST][auto]` or `[TEST][manual]`. Dependencies are recorded between stories and between tasks. One cycle between login and user administration is broken by seeding the first administrator from configuration.
+
+Epics, stories, tasks and dependencies: [docs/planning/06-task-decomposition.md](docs/planning/06-task-decomposition.md)
+
 ## Repository layout
 
 ```text
