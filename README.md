@@ -40,9 +40,13 @@ Roles and RBAC matrix: [docs/planning/02-roles-and-access.md](docs/planning/02-r
 
 ## 4. Product backlog
 
-_Lab 01, Task 3._ Ordered backlog: [docs/planning/03-product-backlog.md](docs/planning/03-product-backlog.md)
+The backlog holds 20 user stories in one ordered list: 12 Must, 5 Should and 3 Could. Seventeen come directly from the scenario, and three are invented extras, one per role. The order follows dependency first, then risk, then value. That puts login (US-01) at the top, followed by the doctor and patient registration that scheduling depends on. Acceptance criteria are written for the top six stories, and every functional requirement maps to at least one story.
 
-Definition of Done: [docs/planning/04-definition-of-done.md](docs/planning/04-definition-of-done.md)
+A story enters a sprint only when it meets the Definition of Ready, and it counts as finished only when it meets the Definition of Done. The Definition of Done requires a reviewed pull request into `master`, passing tests in CI, and a published container image.
+
+Ordered backlog: [docs/planning/03-product-backlog.md](docs/planning/03-product-backlog.md)
+
+Definition of Ready and Done: [docs/planning/04-definition-of-done.md](docs/planning/04-definition-of-done.md)
 
 ## 5. Process and ceremonies
 
