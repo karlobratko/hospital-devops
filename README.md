@@ -8,7 +8,7 @@ Course: Applied DevOps, Graduate Study in Software Engineering, Algebra Bernays 
 
 ## Project board
 
-The work is tracked on the GitHub Project: _link added in Lab 03_.
+The work is tracked on the GitHub Project: https://github.com/users/karlobratko/projects/4.
 
 ## 1. Project overview
 
