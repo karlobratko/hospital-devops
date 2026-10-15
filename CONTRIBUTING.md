@@ -101,7 +101,7 @@ Refs: #23
 
 A pull request targets `master` and is opened as soon as the branch has its first meaningful commit, as a draft if the work is unfinished.
 
-The pull request title is a Conventional Commit subject, because squash merging uses it as the commit on `master`. The description, prefilled from `.github/pull_request_template.md`, contains `Closes #<issue-number>`, which closes the issue on merge and moves its card to Done. It also contains the Definition of Done checklist from [docs/planning/04-definition-of-done.md](docs/planning/04-definition-of-done.md).
+The pull request title is a Conventional Commit subject, because squash merging uses it as the commit on `master`. The description, prefilled from `.github/pull_request_template.md`, contains `Closes #<issue-number>`, which closes the issue on merge and moves its card to Done.
 
 A pull request is merged only when all CI checks pass and every applicable Definition of Done item is ticked. With a single developer, the review is a self-review against the checklist, recorded as a comment on the pull request before merging.
 

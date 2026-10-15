@@ -23,11 +23,5 @@ See docs/planning/04-definition-of-done.md.
 - [ ] The pipeline change has run successfully at least once, with a link to the run below
 - [ ] Documentation updated (README, docs/decisions/ where a choice was made)
 
-## Dependencies
-Blocked by: #<issue> (also set under Relationships → Mark as blocked by)
-
-## Story points
-<1, 2, 3, 5 or 8>
-
 ## Evidence
 <Link to the successful workflow run, image, or dashboard.>
